@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../utlis/scrollToTop";
+import UnderConstruction from "../assets/images/UnderConstruction.svg";
 
 const UnderProcessPage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-[var(--color-white97)] text-[var(--color-gray20)] dark:bg-[var(--color-gray08)] dark:text-[var(--color-white97)] transition-colors duration-300 py-[50px]">
-      
       <img
-        src="/assets/images/UnderConstruction.svg" 
+        src={UnderConstruction}
         alt="Under Process"
         className="max-w-md w-[80%] mb-8"
       />

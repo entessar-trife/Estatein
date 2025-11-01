@@ -1,25 +1,30 @@
 import type { unlockCardComponentProps } from "../components/cards/UnlockCardComponent";
 import type { TitleProps } from "../components/shared/Title";
 import type { CommonCardProps } from "../types/CommonCard";
+import Tenant from "../assets/icons/EffortlessProperty/Tenant.svg"
+import maintenance from "../assets/icons/EffortlessProperty/maintenance.svg"
+import financial from "../assets/icons/EffortlessProperty/financial.svg"
+import legal from "../assets/icons/EffortlessProperty/legal.svg"
+
 
 export const managementData: CommonCardProps[] = [
     {
-        cardImg: "/assets/icons/EffortlessProperty/Tenant.svg",
+        cardImg: Tenant,
         cardTitle: "Tenant Harmony",
         cardDesc: "Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies."
     },
     {
-        cardImg: "/assets/icons/EffortlessProperty/maintenance.svg",
+        cardImg: maintenance,
         cardTitle: "Maintenance Ease",
         cardDesc: "Say goodbye to property maintenance headaches. We handle all aspects of property upkeep."
     },
     {
-        cardImg: "/assets/icons/EffortlessProperty/financial.svg",
+        cardImg: financial,
         cardTitle: "Financial Peace of Mind",
         cardDesc: "Managing property finances can be complex. Our financial experts take care of rent collection"
     },
     {
-        cardImg: "/assets/icons/EffortlessProperty/legal.svg",
+        cardImg: legal,
         cardTitle: "Legal Guardian",
         cardDesc: "Stay compliant with property laws and regulations effortlessly."
     },

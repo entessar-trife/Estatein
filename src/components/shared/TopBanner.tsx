@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { FC } from "react";
+import closeIcon from "../../assets/icons/close.svg";
 
 type TopBannerProps = {
   isVisible: boolean;
@@ -43,7 +44,7 @@ const TopBanner: FC<TopBannerProps> = ({
           onClick={onClose}
           aria-label="Close top banner"
         >
-          <img src="/assets/icons/close.svg" alt={closeIconAlt} />
+          <img src={closeIcon} alt={closeIconAlt} />
         </button>
       </div>
     </div>

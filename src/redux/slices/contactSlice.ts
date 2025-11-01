@@ -2,6 +2,10 @@ import { createAsyncThunk, createSlice, type PayloadAction } from "@reduxjs/tool
 import type { CommonCardProps } from "../../types/CommonCard";
 import { onValue, ref } from "firebase/database";
 import { db } from "../../firebaseConfig";
+import email from "../../assets/icons/CardUnderHero/email.svg"
+import phone from "../../assets/icons/CardUnderHero/phone.svg"
+import location from "../../assets/icons/CardUnderHero/location.svg"
+import estatein from "../../assets/icons/CardUnderHero//estatein.svg"
 
 type ContactState = {
     cards: CommonCardProps[];
@@ -52,19 +56,19 @@ export const transformContactData = (contactData: any): CommonCardProps[] => {
     return [
         {
             cardTitle: contactData.email || "No Email",
-            cardImg: "/assets/icons/CardUnderHero/email.svg",
+            cardImg: email,
             HeadingTag: "a",
             titleLink: `mailto:${contactData.email}`,
         },
         {
             cardTitle: contactData.phone || "No Phone",
-            cardImg: "/assets/icons/CardUnderHero/phone.svg",
+            cardImg: phone,
             HeadingTag: "a",
             titleLink: `tel:${contactData.phone}`,
         },
         {
             cardTitle: contactData.branch || "No Branch",
-            cardImg: "/assets/icons/CardUnderHero/location.svg",
+            cardImg: location,
             HeadingTag: "a",
             titleLink: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contactData.branch)}`,
         },
@@ -78,7 +82,7 @@ export const transformSocialData = (socialData: any): CommonCardProps[] => {
 
     return [
         {
-            cardImg: "assets/icons/CardUnderHero/estatein.svg",
+            cardImg: estatein,
             HeadingTag: "a",
             links: [
                 {

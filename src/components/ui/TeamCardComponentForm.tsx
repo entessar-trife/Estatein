@@ -6,6 +6,7 @@ import {
   resetOutboundMailById,
 } from "../../redux/slices/createEmailSlice";
 import AlertMessage from "../ui/AlertMessage";
+import send from "../../assets/icons/send.svg"
 
 
 type Props = {
@@ -93,7 +94,7 @@ export default function TeamCardComponentForm({ cardId, toMemberName, toEmail }:
           aria-busy={sending}
         >
           <img
-            src="/assets/icons/Team/send.svg"
+            src={send}
             alt={sending ? "Sending..." : "Send"}
             className="w-5 h-5 2xl:w-6 2xl:h-6"
           />

@@ -1,6 +1,9 @@
 // src/components/cards/DescriptionComponent.tsx
 import { shallowEqual } from "react-redux";
 import { useAppSelector } from "../../redux/hooks";
+import bedRoom from "../../assets/icons/FeaturedProperties/bedroom.svg"
+import bathRoom from "../../assets/icons/FeaturedProperties/bathroom.svg"
+import areaIcon from "../../assets/icons/FeaturedProperties/area.svg"
 
 
 
@@ -58,7 +61,7 @@ const DescriptionComponent = () => {
             <div className="flex flex-col gap-1.5 flex-1">
               <div className="flex gap-1">
                 <img
-                  src="/assets/icons/FeaturedProperties/bedroom.svg"
+                  src={bedRoom}
                   alt="bedrooms"
                   className="w-5 h-5 2xl:w-6 2xl:h-6"
                 />
@@ -77,7 +80,7 @@ const DescriptionComponent = () => {
             <div className="flex flex-col gap-1.5 flex-1">
               <div className="flex gap-1">
                 <img
-                  src="/assets/icons/FeaturedProperties/bathroom.svg"
+                  src={bathRoom}
                   alt="bathrooms"
                   className="w-5 h-5 2xl:w-6 2xl:h-6"
                 />
@@ -97,7 +100,7 @@ const DescriptionComponent = () => {
           <div className="flex flex-col gap-1.5 flex-1 lg-custom:hidden">
             <div className="flex gap-1">
               <img
-                src="/assets/icons/FeaturedProperties/area.svg"
+                src={areaIcon}
                 alt="area"
                 className="w-5 h-5 2xl:w-6 2xl:h-6"
               />
@@ -116,7 +119,7 @@ const DescriptionComponent = () => {
             <div className="flex flex-col gap-1.5 flex-1">
               <div className="flex gap-1">
                 <img
-                  src="/assets/icons/FeaturedProperties/bedroom.svg"
+                  src={bedRoom}
                   alt="bedrooms"
                   className="w-5 h-5 2xl:w-6 2xl:h-6"
                 />
@@ -135,7 +138,7 @@ const DescriptionComponent = () => {
             <div className="flex flex-col gap-1.5 flex-1">
               <div className="flex gap-1">
                 <img
-                  src="/assets/icons/FeaturedProperties/bathroom.svg"
+                  src={bathRoom}
                   alt="bathrooms"
                   className="w-5 h-5 2xl:w-6 2xl:h-6"
                 />
@@ -154,7 +157,7 @@ const DescriptionComponent = () => {
             <div className="flex flex-col gap-1.5 flex-1">
               <div className="flex gap-1.5">
                 <img
-                  src="/assets/icons/FeaturedProperties/area.svg"
+                  src={areaIcon}
                   alt="area"
                   className="w-5 h-5 2xl:w-6 2xl:h-6"
                 />

@@ -1,5 +1,6 @@
 import { shallowEqual } from "react-redux";
 import { useAppSelector } from "../../redux/hooks";
+import featuresIcon from "../../assets/icons/FeaturedProperties/FeaturesIcon.svg"
 
 const KeyFeaturesComponent = () => {
   const property = useAppSelector((state) => {
@@ -34,7 +35,7 @@ const KeyFeaturesComponent = () => {
                            transition-all duration-500 ease-in-out"
               >
                 <img
-                  src="/assets/icons/FeaturedProperties/FeaturesIcon.svg"
+                  src={featuresIcon}
                   alt="icon"
                   className="w-[18px] h-[18px] lg-custom:w-5 lg-custom:h-5 2xl:w-6 2xl:h-6"
                 />

@@ -1,6 +1,8 @@
 import Title from "../../components/shared/Title";
 import { SectionWrapper } from "../../layouts/SectionWrapper";
 import { tgContainerAos, tgImgAos, tgRightImgAos } from "../../utlis/Anamation";
+import AbstractDesign4 from "../../assets/images/AbstractDesign4.webp";
+
 
 const galleryImages = [
   { src: "/assets/images/Explore/1.webp", delay: 0 },
@@ -18,7 +20,7 @@ function TeamGallery() {
         {...tgContainerAos()}
       >
         <img
-          src="/assets/images/AbstractDesign4.webp"
+          src={AbstractDesign4}
           alt="Team Gallery Background"
           className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
           loading="lazy"

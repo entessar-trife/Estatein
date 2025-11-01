@@ -3,6 +3,10 @@ import { chatbotTexts } from "../../../data/chatbotData";
 import { InitialWelcomeMessage, WelcomeTipEffect } from "../../../utlis/WelcomeTipEffect";
 import type { Message } from "../../../types/message";
 import { ChatHandler } from "./ChatHandler";
+import bot from "../../../assets/icons/bot.svg"
+import closeIcon from "../../../assets/icons/close.svg"
+import stop from "../../../assets/icons/stop.svg"
+import send from "../../../assets/icons/send.svg"
 
 
 const ChatBot = () => {
@@ -96,7 +100,7 @@ const ChatBot = () => {
         aria-label="Open Chatbot"
       >
           <img
-            src="/assets/icons/bot.svg"
+            src={bot}
             alt="Chat Icon"
             className="w-7 transition-transform duration-300 group-hover:-translate-y-[200%]"
           />
@@ -129,14 +133,14 @@ const ChatBot = () => {
             {/* Header */}
             <div className="flex items-center justify-between p-4  dark:bg-gray15 dark:text-white bg-purple75 text-white">
               <div className="flex items-center gap-3">
-                <img src="/assets/icons/bot.svg" alt="Logo" className="w-10 h-10" />
+                <img src={bot} alt="Logo" className="w-10 h-10" />
                 <div>
                   <h2 className="text-lg font-semibold ">{chatbotTexts.headerTitle}</h2>
                   <p className="text-sm ">{chatbotTexts.headerSubtitle}</p>
                 </div>
               </div>
               <button onClick={() => setIsOpen(false)} className="cursor-pointer p-2 dark:hover:bg-gray20 hover:bg-gray-300 rounded-full transition">
-                <img src="/assets/icons/close.svg" alt="Close" />
+                <img src={closeIcon} alt="Close" />
               </button>
             </div>
 
@@ -203,9 +207,9 @@ const ChatBot = () => {
                 className="bg-gray-300 dark:bg-gray30 text-white px-4 py-2 rounded-full text-sm"
               >
                 {loading ? (
-                  <img src="/assets/icons/stop.svg" alt="Stop" className="w-5 h-5" />
+                  <img src={stop} alt="Stop" className="w-5 h-5" />
                 ) : (
-                  <img src="/assets/icons/send.svg" alt="Send" className="w-5 h-5" />
+                  <img src={send} alt="Send" className="w-5 h-5" />
                 )}
               </button>
             </div>

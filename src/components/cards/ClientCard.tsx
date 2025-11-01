@@ -1,4 +1,6 @@
 import MainButton from "../ui/MainButton";
+import domainImg from "../../assets/icons/ValuedClients/domain.svg";
+import categoryImg from "../../assets/icons/ValuedClients/category.svg";
 
 interface Client {
   id?: string;
@@ -11,7 +13,14 @@ interface Client {
   website?: string;
 }
 
-function ClientCard({ since, title, domain, category, review, website }: Client) {
+function ClientCard({
+  since,
+  title,
+  domain,
+  category,
+  review,
+  website,
+}: Client) {
   return (
     <div
       className="bg-white99 dark:bg-gray08 
@@ -43,7 +52,7 @@ function ClientCard({ since, title, domain, category, review, website }: Client)
       <div className="grid grid-cols-2 gap-4 lg-custom:gap-5 2xl:gap-[30px]">
         <div className="icon_and_text flex flex-col gap-1 lg-custom:gap-[6px] 2xl:gap-2">
           <div className="flex items-center gap-0.5 lg-custom:gap-1 2xl:gap-[6px]">
-            <img src="/assets/icons/ValuedClients/domain.svg" alt="icon" />
+            <img src={domainImg} alt="icon" />
             <span className="text-xs lg-custom:text-sm 2xl:text-lg text-gray40 dark:text-gray60 font-medium leading-[150%]">
               Domain
             </span>
@@ -54,7 +63,7 @@ function ClientCard({ since, title, domain, category, review, website }: Client)
         </div>
         <div className="icon_and_text_two flex flex-col gap-1 lg-custom:gap-[6px] 2xl:gap-2 border-l border-white90 dark:border-gray15 pl-4 lg-custom:pl-5 2xl:pl-[30px]">
           <div className="flex items-center gap-0.5 lg-custom:gap-1 2xl:gap-[6px]">
-            <img src="/assets/icons/ValuedClients/category.svg" alt="icon" />
+            <img src={categoryImg} alt="icon" />
             <span className="text-xs lg-custom:text-sm 2xl:text-lg text-gray40 dark:text-gray60 font-medium leading-[150%]">
               Category
             </span>

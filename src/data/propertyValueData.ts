@@ -1,26 +1,30 @@
 import type { unlockCardComponentProps } from "../components/cards/UnlockCardComponent";
 import type { TitleProps } from "../components/shared/Title";
 import type { CommonCardProps } from "../types/CommonCard";
+import closing from "../assets/icons/PropertyValue/closing.svg"
+import strategic from "../assets/icons/PropertyValue/strategic.svg"
+import negotiation from "../assets/icons/PropertyValue/negotiation.svg"
+
 
 
 export const propertyValueData: CommonCardProps[] = [
     {
-        cardImg: "/assets/icons/PropertyValue/closing.svg",
+        cardImg: closing,
         cardTitle: "Valuation Mastery",
         cardDesc: "Discover the true worth of your property with our expert valuation services.",
     },
     {
-        cardImg: "/assets/icons/PropertyValue/strategic.svg",
+        cardImg: strategic,
         cardTitle: "Strategic Marketing",
         cardDesc: "Selling a property requires more than just a listing; it demands a strategic marketing approach.",
     },
     {
-        cardImg: "/assets/icons/PropertyValue/negotiation.svg",
+        cardImg: negotiation,
         cardTitle: "Negotiation Wizardry",
         cardDesc: "Negotiating the best deal is an art, and our negotiation experts are masters of it.",
     },
     {
-        cardImg: "/assets/icons/PropertyValue/closing.svg",
+        cardImg: closing,
         cardTitle: "Closing Success",
         cardDesc: "A successful sale is not complete until the closing. We guide you through the intricate closing process.",
     },

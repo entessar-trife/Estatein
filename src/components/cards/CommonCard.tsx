@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import type { CommonCardProps } from "../../types/CommonCard";
+import arrowRight from "../../assets/icons/CardUnderHero/arrowRight.svg"
 
 const CommonCard = ({
   HeadingTag = "h5",
@@ -31,7 +32,7 @@ const CommonCard = ({
     >
       {isArrow && (
         <img
-          src="/assets/icons/CardUnderHero/arrowRight.svg"
+          src={arrowRight}
           className="absolute top-5 right-5 w-[26px] h-[26px]"
           alt="arrow icon"
         />

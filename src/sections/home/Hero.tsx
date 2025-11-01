@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import CountUpComponent from "../../components/cards/CountUpComponent";
 import RotatingText from "../../components/cards/RotatingText";
 import { useAppSelector } from "../../redux/hooks";
+import heroImg from "../../assets/images/MainHero/main.webp";
 
 interface HeroProps {
   title: string;
@@ -68,14 +69,14 @@ const Hero = ({ title, description }: HeroProps) => {
         {/* === Background Abstract Design Image === */}
         <img
           rel="preload"
-          src="/assets/images/AbstractDesign5.webp"
+          src={heroImg}
           alt="Abstract Design"
           className="w-full h-full object-cover"
         />
 
         {/* === Foreground Hero Image === */}
         <img
-          src="/assets/images/MainHero/main.webp"
+          src={heroImg}
           alt="Hero"
           className="lg-custom:hidden absolute object-cover object-bottom bottom-0 right-0"
         />
@@ -88,7 +89,7 @@ const Hero = ({ title, description }: HeroProps) => {
           rel="preload"
           data-aos="fade-up"
           data-aos-delay="300"
-          src="/assets/images/MainHero/main.webp"
+          src={heroImg}
           alt="Hero"
           className="hidden lg-custom:block  absolute bottom-0 lg-custom:h-[calc(100vh-142px)] object-contain lg-custom:object-cover object-bottom right-10"
         />

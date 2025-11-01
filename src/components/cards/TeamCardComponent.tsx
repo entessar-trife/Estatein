@@ -1,4 +1,6 @@
 import TeamCardComponentForm from "../ui/TeamCardComponentForm";
+import twitter from "../../assets/icons/Team/twitter.svg"
+
 
 interface TeamCardProps {
   id: string;
@@ -48,7 +50,7 @@ const TeamCardComponent = ({ id, name, role, image, twitterLink, email }: TeamCa
             aria-label={`Open ${name}'s Twitter`}
           >
             <img
-              src="/assets/icons/Team/twitter.svg"
+              src={twitter}
               alt="X (Twitter)"
               className="w-5 h-5 2xl:w-6 2xl:h-6"
             />

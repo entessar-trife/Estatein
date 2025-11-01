@@ -1,6 +1,8 @@
 import CountUpComponent from "../../components/cards/CountUpComponent";
 import Title from "../../components/shared/Title";
 import { SectionWrapper } from "../../layouts/SectionWrapper";
+import ourJourney from "../../assets/images/MainHero/ourJourney.webp";
+import AbstractDesign5 from "../../assets/images/AbstractDesign5.webp";
 
 const Hero2 = () => {
   return (
@@ -21,13 +23,13 @@ const Hero2 = () => {
           className="relative border border-white90 dark:border-gray15 rounded-xl overflow-hidden lg-custom:w-[48%] "
         >
           <img
-            src="/assets/images/AbstractDesign5.webp"
+            src={AbstractDesign5}
             alt="Abstract Design"
             className="absolute inset-0 w-full h-full object-cover z-0"
           />
           <div className="relative h-full flex items-end justify-center">
             <img
-              src="/assets/images/MainHero/ourJourney.webp"
+              src={ourJourney}
               alt=""
               className="w-full h-full object-contain"
             />
