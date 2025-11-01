@@ -1,5 +1,6 @@
 {
   "name": "estatein",
+  "homepage": "https://entessar-trife.github.io/Estatein",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": ""
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -17,6 +20,7 @@
     "aos": "^2.3.4",
     "firebase": "^12.0.0",
     "framer-motion": "^12.23.12",
+    "gh-pages": "^6.3.0",
     "keen-slider": "^6.8.6",
     "lucide-react": "^0.540.0",
     "openai": "^5.11.0",
